@@ -1,10 +1,6 @@
 import math
 
-
-
-
-
-_tuple = (1,2,3,4,5)
+_tuple = (1, 2, 3, 4, 5)
 print(type(_tuple))
 print(_tuple[0])
 print(_tuple[1])
@@ -13,8 +9,6 @@ print(type(_tuple[1]))
 print('x = %d' % _tuple[0])
 
 exit()
-
-
 
 _str = 'AVc'
 _str.capitalize()
@@ -31,6 +25,7 @@ min = min(_list)
 max = max(_list)
 print(min, max)
 
+
 def findminmax(L):
     _min = L[0]
     print(_min)
@@ -40,12 +35,14 @@ def findminmax(L):
             _min = val
         elif val > _max:
             _max = val
-    return (_min, _max)
+    return _min, _max
+
+
 print(findminmax(_list))
 
 for list_val in _list:
     print(list_val)
-for list_key, list_val in enumerate(_list):
+for list_key, list_val in enumerate(_list):  # 同时迭代索引和元素本身
     print(list_key, list_val)
 for tuple_val_1, tuple_val_2 in [(1, 2), (3, 4)]:
     print(tuple_val_1, tuple_val_2)

@@ -1,5 +1,6 @@
 import asyncio
 
+
 async def wget(host):
     print('wget %s...' % host)
     connect = asyncio.open_connection(host, 80)
@@ -17,6 +18,6 @@ async def wget(host):
 
 
 loop = asyncio.get_event_loop()
-task = [wget(host) for host in ['www.baidu.com','www.163.com']]
+task = [wget(host) for host in ['www.baidu.com', 'www.163.com']]
 loop.run_until_complete(asyncio.wait(task))
 loop.close()

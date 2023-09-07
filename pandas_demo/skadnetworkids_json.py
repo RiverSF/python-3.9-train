@@ -34,6 +34,5 @@ for idx, row in enumerate(data):
 
 print(json.dumps(new_json))
 
-
 dfj = pd.DataFrame(new_json)
 dfj.to_json("new_skadnetworkids.json", orient='records')

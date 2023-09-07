@@ -22,7 +22,7 @@ for idx, row in enumerate(data):
         "entity_name": row[0],
         "entity_domain": row[1],
         "skadnetwork_id": row[2],
-        "creation_date":"2023-05-15T00:00:00Z"
+        "creation_date": "2023-05-15T00:00:00Z"
     }
     ids_dict["skadnetwork_ids"].append(new_row)
     # if idx == 1:

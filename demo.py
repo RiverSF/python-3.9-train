@@ -150,6 +150,13 @@ print(len(nums))
 # for _v in nums:
 #     print(_v)
 
+# 格式化整数和浮点数还可以指定是否补0和整数与小数的位数：
+print('%06d-%04d' % (3, 10))
+# 000003-0010
+print('%06.2f' % 3.1415926)
+# 003.14
+
+
 _dict = {}
 _dict['a'] = 1
 print(_dict.get('b'))
